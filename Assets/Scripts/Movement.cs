@@ -10,11 +10,13 @@ public class Movement : MonoBehaviour
 
     Rigidbody myRigidbody;
     Transform myTransform;
+    AudioSource myAudioSource;
 
     private void Start()
     {
         myRigidbody = GetComponent<Rigidbody>();
         myTransform = GetComponent<Transform>();
+        myAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -26,14 +28,21 @@ public class Movement : MonoBehaviour
     {
         ProcessThrust();
         ProcessRotation();
-
     }
 
     private void ProcessThrust()
     {
         if (Input.GetKey(KeyCode.Space))
         {
+            if (!myAudioSource.isPlaying)
+            {
+                myAudioSource.Play();
+            }
             myRigidbody.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
+        }
+        else
+        {
+            myAudioSource.Stop();
         }
     }
 
