@@ -757,7 +757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7920081178110746391, guid: 79834f4b5b37b6445ba3ac9f017be8ed, type: 3}
       propertyPath: m_Drag
-      value: 0.25
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7920081178110746391, guid: 79834f4b5b37b6445ba3ac9f017be8ed, type: 3}
       propertyPath: m_Constraints
@@ -765,7 +765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7920081178110746391, guid: 79834f4b5b37b6445ba3ac9f017be8ed, type: 3}
       propertyPath: m_Interpolate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7920081178110746391, guid: 79834f4b5b37b6445ba3ac9f017be8ed, type: 3}
       propertyPath: m_CollisionDetection
